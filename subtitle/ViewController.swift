@@ -1,0 +1,193 @@
+//
+//  ViewController.swift
+//  subtle
+//
+//  Created by iwheelbuy on 13.11.2022.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let vidStartTime = Time("00:00:12,000")!
+        let subStartTime = Time("00:00:10,000")!
+        let vidFinishTime = Time("00:03:20,000")!
+        let subFinishTime = Time("00:03:28,500")!
+
+        let vidDuration = Double(vidFinishTime.ms - vidStartTime.ms)
+        let subDuration = Double(subFinishTime.ms - subStartTime.ms)
+        let speed = vidDuration / subDuration
+        print(speed)
+        update(episode: episode(1), speed: speed)
+    }
+
+    func update(episode: String, speed: Double) {
+        // < 1 видео короче чем субтитры
+        // > 1 видео длиннее чем субтитры
+        let url = Bundle.main.url(forResource: episode, withExtension: "srt")!
+        let string = try! String(contentsOf: url)
+        let lines = string
+            .replacingOccurrences(of: "\r", with: "")
+            .components(separatedBy: "\n")
+        for line in lines {
+            if let value = Value(line) {
+                print("~~|", line, value.updated(speed: speed).line)
+            }
+        }
+    }
+
+    func episode(_ value: Int) -> String {
+        return "brooklyn.nine.nine.s01e\(("0" + "\(value)").suffix(2)).web-dlrip.rus.eng.paramount.comedy"
+    }
+}
+
+struct Value {
+
+    let finish: Time
+    let start: Time
+    let line: String
+
+    init(finish: Time, start: Time) {
+        self.finish = finish
+        self.start = start
+        self.line = [start.line, finish.line].joined(separator: " --> ")
+    }
+
+    init?(_ line: String) {
+        let a = line.components(separatedBy: " --> ")
+        guard a.count == 2 else {
+            return nil
+        }
+        guard let start = Time(a[0]) else {
+            return nil
+        }
+        guard let finish = Time(a[1]) else {
+            return nil
+        }
+        self.finish = finish
+        self.start = start
+        self.line = line
+    }
+
+    func updated(speed: Double) -> Value {
+        return Value(
+            finish: finish.ms.time(speed: speed),
+            start: start.ms.time(speed: speed)
+        )
+    }
+}
+
+struct Time {
+
+    let hours: Number
+    let milliseconds: Number
+    let minutes: Number
+    let seconds: Number
+    let line: String
+
+    init(hours: Number, milliseconds: Number, minutes: Number, seconds: Number) {
+        self.hours = hours
+        self.milliseconds = milliseconds
+        self.minutes = minutes
+        self.seconds = seconds
+        self.line = [[hours.line, minutes.line, seconds.line].joined(separator: ":"), milliseconds.line].joined(separator: ",")
+    }
+
+    init?(_ line: String) {
+        let a = line.components(separatedBy: ",")
+        guard a.count == 2 else {
+            return nil
+        }
+        guard let milliseconds = Number(a[1], size: 3) else {
+            return nil
+        }
+        let b = a[0].components(separatedBy: ":")
+        guard b.count == 3 else {
+            return nil
+        }
+        guard let seconds = Number(b[2], size: 2) else {
+            return nil
+        }
+        guard let minutes = Number(b[1], size: 2) else {
+            return nil
+        }
+        guard let hours = Number(b[0], size: 2) else {
+            return nil
+        }
+        self.hours = hours
+        self.minutes = minutes
+        self.seconds = seconds
+        self.milliseconds = milliseconds
+        self.line = line
+    }
+
+    var ms: Int {
+        let result = [
+            hours.digits.joined * 60 * 60 * 1000,
+            minutes.digits.joined * 60 * 1000,
+            seconds.digits.joined * 1000,
+            milliseconds.digits.joined
+        ]
+        return result.reduce(0, +)
+    }
+}
+
+extension Int {
+
+    func time(speed: Double) -> Time {
+        let ms = Int(Double(self) * speed)
+        let hours = number(ms: ms, upper: 24 * 60 * 60 * 1000, lower: 60 * 60 * 1000, size: 2)
+        let milliseconds = number(ms: ms, upper: 1000, lower: 1, size: 3)
+        let minutes = number(ms: ms, upper: 60 * 60 * 1000, lower: 60 * 1000, size: 2)
+        let seconds = number(ms: ms, upper: 60 * 1000, lower: 1000, size: 2)
+        return Time(hours: hours, milliseconds: milliseconds, minutes: minutes, seconds: seconds)
+    }
+
+    private func number(ms: Int, upper: Int, lower: Int, size: Int) -> Number {
+        let value = (ms % upper) / lower
+        var line = "\(value)"
+        assert(line.count <= size)
+        while line.count < size {
+            line = "0" + line
+        }
+        let digits = line.compactMap({ Int("\($0)") })
+        assert(digits.count == size)
+        return Number(digits: digits, line: line)
+    }
+}
+
+extension Array where Element == Int {
+
+    var joined: Int {
+        enumerated()
+            .map({ (index, digit) in
+                let decimal = pow(10, count - index - 1)
+                let result = NSDecimalNumber(decimal: decimal).intValue
+                return digit * result
+            })
+            .reduce(0, +)
+    }
+}
+
+struct Number {
+
+    let digits: [Int]
+    let line: String
+
+    init(digits: [Int], line: String) {
+        self.digits = digits
+        self.line = line
+    }
+
+    init?(_ line: String, size: Int) {
+        let digits = line.compactMap({ Int("\($0)") })
+        guard digits.count == line.count, digits.count == size else {
+            return nil
+        }
+        self.digits = digits
+        self.line = line
+    }
+}

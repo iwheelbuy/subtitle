@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AA3EBE02920CB8600429E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3EBDF2920CB8600429E28 /* AppDelegate.swift */; };
+		7AA3EBE22920CB8600429E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3EBE12920CB8600429E28 /* SceneDelegate.swift */; };
+		7AA3EBE42920CB8600429E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3EBE32920CB8600429E28 /* ViewController.swift */; };
+		7AA3EBE72920CB8600429E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBE52920CB8600429E28 /* Main.storyboard */; };
+		7AA3EBE92920CB8700429E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBE82920CB8700429E28 /* Assets.xcassets */; };
+		7AA3EBEC2920CB8700429E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBEA2920CB8700429E28 /* LaunchScreen.storyboard */; };
+		7AA3EC212920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBF52920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC222920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBF62920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC232920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBF72920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC242920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBF82920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC252920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBF92920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC262920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFA2920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC272920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFB2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC282920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFC2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC292920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFD2920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC2A2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFE2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC2B2920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EBFF2920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC2C2920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC002920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC2D2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC012920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC2E2920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC022920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC2F2920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC032920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC302920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC042920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC312920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC052920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC322920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC062920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC332920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC072920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC342920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC082920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC352920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC092920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC362920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC372920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0B2920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC382920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0C2920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC392920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0D2920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC3A2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0E2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC3B2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC0F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC3C2920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC102920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC3D2920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC112920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC3E2920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC122920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC3F2920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC132920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC402920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC142920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC412920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC152920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC422920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC162920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC432920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC172920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC442920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC182920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC452920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC192920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC462920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC472920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1B2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC482920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1C2920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC492920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1D2920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC4A2920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1E2920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt */; };
+		7AA3EC4B2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC1F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi */; };
+		7AA3EC4C2920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3EC202920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7AA3EBDC2920CB8600429E28 /* subtitle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subtitle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA3EBDF2920CB8600429E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AA3EBE12920CB8600429E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7AA3EBE32920CB8600429E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AA3EBE62920CB8600429E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AA3EBE82920CB8700429E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AA3EBEB2920CB8700429E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AA3EBED2920CB8700429E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA3EBF52920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBF62920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBF72920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EBF82920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBF92920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EBFA2920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EBFB2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EBFC2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBFD2920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBFE2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EBFF2920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC002920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC012920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC022920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC032920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC042920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC052920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC062920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC072920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC082920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC092920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC0A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC0B2920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC0C2920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC0D2920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC0E2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC0F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC102920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC112920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC122920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC132920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC142920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC152920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC162920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC172920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC182920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC192920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC1A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC1B2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC1C2920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC1D2920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC1E2920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt"; sourceTree = "<group>"; };
+		7AA3EC1F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+		7AA3EC202920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = "brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AA3EBD92920CB8600429E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AA3EBD32920CB8600429E28 = {
+			isa = PBXGroup;
+			children = (
+				7AA3EC032920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC182920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EBFB2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC0E2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC172920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC1E2920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC042920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC162920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC112920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC062920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC092920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC152920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC052920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBFF2920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC102920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC0C2920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC1D2920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC132920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC1A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC0A2920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC1F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC0F2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EBF92920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC192920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC1B2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBFC2920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC1C2920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC122920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC202920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBF82920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC142920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC022920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC0B2920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBF52920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC002920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBFD2920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC012920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBFE2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EBFA2920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EBF62920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EC072920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC082920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EBF72920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi */,
+				7AA3EC0D2920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt */,
+				7AA3EBDE2920CB8600429E28 /* subtitle */,
+				7AA3EBDD2920CB8600429E28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AA3EBDD2920CB8600429E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3EBDC2920CB8600429E28 /* subtitle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AA3EBDE2920CB8600429E28 /* subtitle */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3EBED2920CB8700429E28 /* Info.plist */,
+				7AA3EBDF2920CB8600429E28 /* AppDelegate.swift */,
+				7AA3EBE12920CB8600429E28 /* SceneDelegate.swift */,
+				7AA3EBE32920CB8600429E28 /* ViewController.swift */,
+				7AA3EBE82920CB8700429E28 /* Assets.xcassets */,
+				7AA3EBEA2920CB8700429E28 /* LaunchScreen.storyboard */,
+				7AA3EBE52920CB8600429E28 /* Main.storyboard */,
+			);
+			path = subtitle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AA3EBDB2920CB8600429E28 /* subtitle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA3EBF02920CB8700429E28 /* Build configuration list for PBXNativeTarget "subtitle" */;
+			buildPhases = (
+				7AA3EBD82920CB8600429E28 /* Sources */,
+				7AA3EBD92920CB8600429E28 /* Frameworks */,
+				7AA3EBDA2920CB8600429E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = subtitle;
+			productName = subtitle;
+			productReference = 7AA3EBDC2920CB8600429E28 /* subtitle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA3EBD42920CB8600429E28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					7AA3EBDB2920CB8600429E28 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 7AA3EBD72920CB8600429E28 /* Build configuration list for PBXProject "subtitle" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AA3EBD32920CB8600429E28;
+			productRefGroup = 7AA3EBDD2920CB8600429E28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AA3EBDB2920CB8600429E28 /* subtitle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AA3EBDA2920CB8600429E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA3EC342920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC3A2920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC3C2920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC332920EA7600429E28 /* brooklyn.nine.nine.s01e21.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC442920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC3D2920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC252920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC2E2920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC222920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC292920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC452920EA7600429E28 /* brooklyn.nine.nine.s01e12.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC312920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC2F2920EA7600429E28 /* brooklyn.nine.nine.s01e01.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC212920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC4C2920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC3B2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC322920EA7600429E28 /* brooklyn.nine.nine.s01e05.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC262920EA7600429E28 /* brooklyn.nine.nine.s01e20.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC272920EA7600429E28 /* brooklyn.nine.nine.s01e02.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC412920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC302920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC422920EA7600429E28 /* brooklyn.nine.nine.s01e04.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC242920EA7600429E28 /* brooklyn.nine.nine.s01e15.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC472920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EBEC2920CB8700429E28 /* LaunchScreen.storyboard in Resources */,
+				7AA3EC492920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC3E2920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC402920EA7600429E28 /* brooklyn.nine.nine.s01e16.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC2B2920EA7600429E28 /* brooklyn.nine.nine.s01e07.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC482920EA7600429E28 /* brooklyn.nine.nine.s01e14.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC372920EA7600429E28 /* brooklyn.nine.nine.s01e17.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC2A2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC432920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC282920EA7600429E28 /* brooklyn.nine.nine.s01e13.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC3F2920EA7600429E28 /* brooklyn.nine.nine.s01e09.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC4A2920EA7600429E28 /* brooklyn.nine.nine.s01e03.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC2C2920EA7600429E28 /* brooklyn.nine.nine.s01e18.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC462920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC392920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EC4B2920EA7600429E28 /* brooklyn.nine.nine.s01e11.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC362920EA7600429E28 /* brooklyn.nine.nine.s01e10.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+				7AA3EBE92920CB8700429E28 /* Assets.xcassets in Resources */,
+				7AA3EC232920EA7600429E28 /* brooklyn.nine.nine.s01e22.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC2D2920EA7600429E28 /* brooklyn.nine.nine.s01e19.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EC352920EA7600429E28 /* brooklyn.nine.nine.s01e06.web-dlrip.rus.eng.paramount.comedy.avi in Resources */,
+				7AA3EBE72920CB8600429E28 /* Main.storyboard in Resources */,
+				7AA3EC382920EA7600429E28 /* brooklyn.nine.nine.s01e08.web-dlrip.rus.eng.paramount.comedy.srt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AA3EBD82920CB8600429E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA3EBE42920CB8600429E28 /* ViewController.swift in Sources */,
+				7AA3EBE02920CB8600429E28 /* AppDelegate.swift in Sources */,
+				7AA3EBE22920CB8600429E28 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7AA3EBE52920CB8600429E28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA3EBE62920CB8600429E28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AA3EBEA2920CB8700429E28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA3EBEB2920CB8700429E28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AA3EBEE2920CB8700429E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AA3EBEF2920CB8700429E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AA3EBF12920CB8700429E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = subtitle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iwheelbuy.projects.chess.subtitle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AA3EBF22920CB8700429E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = subtitle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iwheelbuy.projects.chess.subtitle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AA3EBD72920CB8600429E28 /* Build configuration list for PBXProject "subtitle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA3EBEE2920CB8700429E28 /* Debug */,
+				7AA3EBEF2920CB8700429E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA3EBF02920CB8700429E28 /* Build configuration list for PBXNativeTarget "subtitle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA3EBF12920CB8700429E28 /* Debug */,
+				7AA3EBF22920CB8700429E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA3EBD42920CB8600429E28 /* Project object */;
+}
