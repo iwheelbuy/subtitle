@@ -12,30 +12,53 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vidStartTime = Time("00:00:12,000")!
-        let subStartTime = Time("00:00:10,000")!
-        let vidFinishTime = Time("00:03:20,000")!
-        let subFinishTime = Time("00:03:28,500")!
-
-        let vidDuration = Double(vidFinishTime.ms - vidStartTime.ms)
-        let subDuration = Double(subFinishTime.ms - subStartTime.ms)
-        let speed = vidDuration / subDuration
-        print(speed)
-        update(episode: episode(1), speed: speed)
+//        let vidStartTime = Time("00:00:00,000")!
+//        let subStartTime = Time("00:00:00,000")!
+//        let vidFinishTime = Time("00:11:22,000")!
+//        let subFinishTime = Time("00:11:14,000")!
+//
+//        let vidDuration = Double(vidFinishTime.ms - vidStartTime.ms)
+//        let subDuration = Double(subFinishTime.ms - subStartTime.ms)
+//        let speed = vidDuration / subDuration
+//        update(episode: episode(1), speed: speed, write: false)
+//        update(episode: episode(1), offset: -500, write: false)
     }
 
-    func update(episode: String, speed: Double) {
+    func update(episode: String, offset: Int, write: Bool) {
+        update(episode: episode, write: write) { value in
+            return value.updated(offset: offset).line
+        }
+    }
+
+    func update(episode: String, write: Bool, _ block: (Value) -> String?) {
         // < 1 видео короче чем субтитры
         // > 1 видео длиннее чем субтитры
         let url = Bundle.main.url(forResource: episode, withExtension: "srt")!
-        let string = try! String(contentsOf: url)
+        var string = try! String(contentsOf: url)
         let lines = string
             .replacingOccurrences(of: "\r", with: "")
             .components(separatedBy: "\n")
         for line in lines {
-            if let value = Value(line) {
-                print("~~|", line, value.updated(speed: speed).line)
+            if let value = Value(line), let newLine = block(value) {
+                print("~~|", line, newLine)
+                string = string.replacingOccurrences(of: line, with: newLine)
             }
+        }
+        if write {
+            do {
+                let url = URL(fileURLWithPath: "/Users/iwheelbuy/Documents/subtitle/\(episode).srt")
+                try string.write(to: url, atomically: true, encoding: .utf8)
+            } catch {
+                print(error)
+            }
+        }
+    }
+
+    func update(episode: String, speed: Double, write: Bool) {
+        // < 1 видео короче чем субтитры
+        // > 1 видео длиннее чем субтитры
+        update(episode: episode, write: write) { value in
+            return value.updated(speed: speed).line
         }
     }
 
@@ -76,6 +99,13 @@ struct Value {
         return Value(
             finish: finish.ms.time(speed: speed),
             start: start.ms.time(speed: speed)
+        )
+    }
+
+    func updated(offset: Int) -> Value {
+        return Value(
+            finish: finish.ms.time(offset: offset),
+            start: start.ms.time(offset: offset)
         )
     }
 }
@@ -137,8 +167,17 @@ struct Time {
 
 extension Int {
 
+    func time(offset: Int) -> Time {
+        let ms = self + offset
+        return time(ms: ms)
+    }
+
     func time(speed: Double) -> Time {
         let ms = Int(Double(self) * speed)
+        return time(ms: ms)
+    }
+
+    func time(ms: Int) -> Time {
         let hours = number(ms: ms, upper: 24 * 60 * 60 * 1000, lower: 60 * 60 * 1000, size: 2)
         let milliseconds = number(ms: ms, upper: 1000, lower: 1, size: 3)
         let minutes = number(ms: ms, upper: 60 * 60 * 1000, lower: 60 * 1000, size: 2)
