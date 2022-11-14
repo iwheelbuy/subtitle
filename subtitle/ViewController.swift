@@ -11,17 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let vidFinishTime = Time("00:19:55,000")!
+        let subFinishTime = Time("00:19:54,700")!
 
-        let vidStartTime = Time("00:00:00,000")!
-        let subStartTime = Time("00:00:00,000")!
-        let vidFinishTime = Time("00:20:04,000")!
-        let subFinishTime = Time("00:20:04,300")!
-
-        let vidDuration = Double(vidFinishTime.ms - vidStartTime.ms)
-        let subDuration = Double(subFinishTime.ms - subStartTime.ms)
+        let vidDuration = Double(vidFinishTime.ms)
+        let subDuration = Double(subFinishTime.ms)
         let speed = vidDuration / subDuration
-        update(episode: episode(3), speed: speed, write: true)
-//        update(episode: episode(3), offset: 100, write: true)
+        update(episode: episode(5), speed: speed, write: true)
+//        update(episode: episode(5), offset: 1000, write: true)
     }
 
     func update(episode: String, offset: Int, write: Bool) {
